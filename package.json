@@ -1,0 +1,72 @@
+{
+  "name": "task",
+  "version": "0.0.0",
+  "description": "Challenge",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm run createtables && babel-node app.js",
+    "dev": "nodemon -r esm app.js babel-watch app.js",
+    "droptables": "babel-node ./server/services/dropTables.js",
+    "createtables": "babel-node ./server/services/createTables.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/"
+  },
+  "keywords": [],
+  "author": "Paul Sebalu",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/"
+  },
+  "homepage": "https://github.com/",
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-node": "^4.0.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "mocha": "^5.2.0",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nodemon": "^1.19.2",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-object-assign": "^7.2.0",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "@hapi/joi": "^16.1.4",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "babel-upgrade": "^1.0.1",
+    "babel-watch": "^2.0.7",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "chai": "^4.1.2",
+    "chai-http": "^4.2.0",
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "express-locale": "^2.0.0",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mariadb": "^2.4.0",
+    "mocha": "^5.2.0",
+    "mocha-lcov-reporter": "^1.3.0",
+    "moment": "^2.24.0",
+    "multer": "^1.4.2",
+    "node-polyglot": "^2.4.0",
+    "nodemailer": "^6.4.8",
+    "nodemon": "^1.19.2",
+    "object.fromentries": "^2.0.2"
+  }
+}
